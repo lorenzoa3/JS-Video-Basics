@@ -36,9 +36,9 @@ window.addEventListener("load", function() {
 
   // Speed Up Button Functionality
   speedUpButton.addEventListener('click', function () {
-	if (video.playbackRate > 1.0) {
-		video.playbackRate -= 0.1; // Decrease the speed by the same amount you slowed down
-	  }
+
+	video.playbackRate += 0.1; // Decrease the speed by the same amount you slowed down
+	  
 	  console.log(`New playback rate: ${video.playbackRate}`);
   });
 
